@@ -3,8 +3,7 @@
 def main():
     a = float(input('Primeira nota do aluno: '))
     b = float(input('Segunda nota do aluno: '))
-    notas = [a, b]
-    print(f'A média entre {notas[0]} e {notas[1]} é igual a {média(notas):.1f}')
+    print(f'A média entre {a} e {b} é igual a {média([a, b]):.1f}')
 
 
 def média(valores):
