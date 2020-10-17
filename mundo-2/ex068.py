@@ -1,12 +1,10 @@
 # Exercício 068 - Jogo do Par ou Ímpar
 
 from random import randint
-from utils import é_par
+from utils import escreve, é_par
 
 def main():
-    print(13 * '=-')
-    print('VAMOS JOGAR PAR OU ÍMPAR')
-    print(13 * '=-')
+    escreve('VAMOS JOGAR PAR OU ÍMPAR')
     novo_jogo()
 
 
