@@ -110,3 +110,8 @@ def gera_produtos(x, n):
     '''Retorna uma lista com n produtos de x.'''
     return [x * i for i in range(1, n + 1)]
 
+
+def posição(item, lista):
+    '''Retorna a posição do item na lista.'''
+    return lista.index(item) + 1 if item in lista else -1
+
