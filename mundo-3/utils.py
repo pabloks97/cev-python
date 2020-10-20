@@ -45,9 +45,9 @@ def é_isósceles(a, b, c):
     return a == b or b == c or a == c
 
 
-def escreve(texto, estilo='~'):
+def escreve(texto, estilo='~', preenchimento=4):
     '''Escreve o texto no formato de um cabeçalho.'''
-    tamanho = len(texto) + 4
+    tamanho = len(texto) + preenchimento
     print(tamanho * estilo)
     print(f'{texto:^{tamanho}}')
     print(tamanho * estilo)
