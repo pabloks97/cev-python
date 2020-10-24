@@ -1,5 +1,8 @@
 # Funções auxiliares
 
+from datetime import datetime
+
+
 def quadrado(x):
     '''Retorna o quadrado de x.'''
     return x * x
@@ -114,4 +117,9 @@ def gera_produtos(x, n):
 def posição(item, lista):
     '''Retorna a posição do item na lista.'''
     return lista.index(item) + 1 if item in lista else -1
+
+
+def calcula_idade(nascimento, ano_atual=datetime.now().year):
+    '''Retorna a idade de acordo com o ano de nascimento.'''
+    return ano_atual - nascimento
 
