@@ -1,10 +1,8 @@
 # Exercício 012 - Calculando Descontos
 
-from utils import porcento
+preco = float(input('Qual é o preço do produto? R$'))
+desconto = 0.05 * preco
+total = preco - desconto
 
-preço = float(input('Qual é o preço do produto? R$'))
-desconto = porcento(5, preço)
-total = preço - desconto
-
-print(f'O produto que custava R${preço:.2f}, na promoção', end=' ')
-print(f'com desconto de 5% vai custar R${total:.2f}')
+print(f'O produto que custava R${preco:.2f}, ', end='')
+print(f'na promoção com desconto de 5% vai custar R${total:.2f}')
