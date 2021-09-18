@@ -1,0 +1,17 @@
+# Mundo 1: Fundamentos
+
+1. [Olá, Mundo!](ex001.py)
+2. [Respondendo ao Usuário](ex002.py)
+3. [Somando Dois Números](ex003.py)
+4. [Dissecando uma Variável](ex004.py)
+5. [Antecessor e Sucessor](ex005.py)
+6. [Dobro, Triplo, Raiz Quadrada](ex006.py)
+7. [Média Aritmética](ex007.py)
+8. [Conversor de Medidas](ex008.py)
+9. [Tabuada](ex009.py)
+10. [Conversor de Moedas](ex010.py)
+11. [Pintando Parede](ex011.py)
+12. [Calculando Descontos](ex012.py)
+13. [Reajuste Salarial](ex013.py)
+14. [Conversor de Temperaturas](ex014.py)
+15. [Aluguel de Carros](ex015.py)
