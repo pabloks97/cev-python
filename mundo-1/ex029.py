@@ -1,5 +1,6 @@
 # Exercício 029 - Radar Eletrônico
 
+
 def main():
     velocidade = int(input('Qual é a velocidade atual do carro? '))
 
@@ -17,4 +18,5 @@ def calcula_multa(v):
 
 
 # --------------------------------
-main()
+if __name__ == '__main__':
+    main()

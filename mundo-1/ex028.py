@@ -7,13 +7,13 @@ print('-=-' * 20)
 print('Vou pensar em um número entre 0 e 5. Tente adivinhar...')
 print('-=-' * 20)
 
-n_aleatório = randint(0, 5)
+aleatorio = randint(0, 5)
 
-n_jogador = int(input('Em que número eu pensei? '))
+jogador = int(input('Em que número eu pensei? '))
 print('PROCESSANDO...')
 sleep(1)
 
-if n_jogador == n_aleatório:
+if jogador == aleatorio:
     print('PARABÉNS! Você conseguiu me vencer!')
 else:
-    print(f'GANHEI! Eu pensei no número {n_aleatório} e não no {n_jogador}!')
+    print(f'GANHEI! Eu pensei no número {aleatorio} e não no {jogador}!')

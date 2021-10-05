@@ -1,12 +1,7 @@
 # Exercício 030 - Par ou Ímpar?
 
-from utils import é_par
+x = int(input('Me diga um número qualquer: '))
 
-número = int(input('Me diga um número qualquer: '))
+resultado = 'PAR' if x % 2 == 0 else 'ÍMPAR'
 
-if é_par(número):
-    resultado = 'PAR'
-else:
-    resultado = 'ÍMPAR'
-
-print(f'O número {número} é {resultado}')
+print(f'O número {x} é {resultado}')
