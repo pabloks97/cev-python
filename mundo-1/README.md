@@ -30,3 +30,8 @@
 28. [Jogo da Adivinhação v.1.0](ex028.py)
 29. [Radar Eletrônico](ex029.py)
 30. [Par ou Ímpar?](ex030.py)
+31. [Custo da Viagem](ex031.py)
+32. [Ano Bissexto](ex032.py)
+33. [Maior e Menor Valores](ex033.py)
+34. [Aumentos Múltiplos](ex034.py)
+35. [Analisando Triângulo v1.0](ex035.py)
