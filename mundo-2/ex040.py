@@ -1,18 +1,18 @@
 # Exercício 040 - Aquele Clássico da Média
 
-from utils import média
+from utils import media
 
 notas = []
 notas.append(float(input('Primeira nota: ')))
 notas.append(float(input('Segunda nota: ')))
 
-média = média(notas)
+valor_media = media(notas)
 
-print(f'Tirando {notas[0]} e {notas[1]} a média do aluno é {média:.1f}')
+print(f'Tirando {notas[0]} e {notas[1]} a média do aluno é {valor_media:.1f}')
 
-if média < 5:
+if valor_media < 5:
     resultado = 'REPROVADO'
-elif média >= 7:
+elif valor_media >= 7:
     resultado = 'APROVADO'
 else:
     resultado = 'de RECUPERAÇÃO'
