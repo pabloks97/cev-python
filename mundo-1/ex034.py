@@ -2,10 +2,10 @@
 
 from utils import porcento
 
-salário = float(input('Qual é o salário do funcionário? R$'))
+salario = float(input('Qual é o salário do funcionário? R$'))
 
-porcentagem = 10 if salário > 1250 else 15
-aumento = porcento(porcentagem, salário)
+porcentagem = 10 if salario > 1250 else 15
+aumento = porcento(porcentagem, salario)
 
-total = salário + aumento
-print(f'Quem ganhava R${salário:.2f} passa a ganhar R${total:.2f} agora.')
+total = salario + aumento
+print(f'Quem ganhava R${salario:.2f} passa a ganhar R${total:.2f} agora.')
