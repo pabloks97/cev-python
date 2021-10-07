@@ -1,15 +1,15 @@
 # Exercício 065 - Maior e Menor Valores
 
-números = []
+numeros = []
 continuar = 's'
 
 while continuar in 'sS':
-    números.append(int(input('Digite um número: ')))
+    numeros.append(int(input('Digite um número: ')))
     continuar = input('Quer continuar? [S/N] ')
 
-média = sum(números) / len(números)
-maior = max(números)
-menor = min(números)
+media = sum(numeros) / len(numeros)
+maior = max(numeros)
+menor = min(numeros)
 
-print(f'Você digitou {len(números)} números e a média foi {média:.2f}')
+print(f'Você digitou {len(numeros)} números e a média foi {media:.2f}')
 print(f'O maior valor foi {maior} e o menor foi {menor}')

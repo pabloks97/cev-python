@@ -33,6 +33,6 @@
 66. [Vários Números com Flag](ex066.py)
 67. [Tabuada v3.0](ex067.py)
 68. [Jogo do Par ou Ímpar](ex068.py)
-69. [Análise de Dados do Grupo](ex069.py)
+69. [Análise de Dados do Grupo](ex069.py) ([Solução Alternativa](ex069B.py))
 70. [Estatísticas em Produtos](ex070.py)
 71. [Simulador de Caixa Eletrônico](ex071.py)

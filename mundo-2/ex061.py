@@ -4,11 +4,11 @@ print('Gerador de PA')
 print(10 * '-=')
 
 termo = int(input('Primeiro termo: '))
-razão = int(input('Razão da PA: '))
+razao = int(input('Razão da PA: '))
 
 contador = 0
 while contador < 10:
     print(f'{termo} → ', end='')
-    termo += razão
+    termo += razao
     contador += 1
 print('FIM')

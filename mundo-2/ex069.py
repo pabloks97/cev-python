@@ -2,6 +2,7 @@
 
 from utils import escreve
 
+
 def main():
     escreve('CADASTRE UMA PESSOA', '-')
     idades, sexos = cadastra_pessoa()
@@ -25,23 +26,29 @@ def cadastra_pessoa(idades=[], sexos=[]):
     sexos.append(pega_sexo())
     return idades, sexos
 
+
 def pega_idade():
     return int(input('Idade: '))
 
+
 def pega_sexo():
     return input('Sexo: [M/F] ')
+
 
 def continua():
     '''Retorna True se o usuário quer continuar.'''
     return input('Quer continuar? [S/N] ') in 'sS'
 
+
 def homens(sexos):
     '''Retorna o número de homens.'''
     return sexos.count('m') + sexos.count('M')
 
+
 def maiores(idades):
     '''Retorna o número de pessoas maiores de 18 anos.'''
     return sum([1 for idade in idades if idade >= 18])
+
 
 def mulheres_menores(sexos, idades):
     '''Retorna o número de mulheres menores de 20 anos.'''
@@ -50,4 +57,5 @@ def mulheres_menores(sexos, idades):
 
 
 # -----------------------------------------
-main()
+if __name__ == '__main__':
+    main()

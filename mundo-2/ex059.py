@@ -3,23 +3,24 @@
 from time import sleep
 from utils import exibe_menu
 
+
 def main():
-    OPÇÕES = ['somar', 'multiplicar', 'maior', 'novos números', 'sair do programa']
-    
-    x, y = novos_números()
+    OPCOES = ['somar', 'multiplicar', 'maior', 'novos números', 'sair do programa']
+
+    x, y = novos_numeros()
     while True:
-        exibe_menu(OPÇÕES)
-        opção = int(input('>>>>> Qual é a sua opção? '))
-        if opção == 1:
+        exibe_menu(OPCOES)
+        opcao = int(input('>>>>> Qual é a sua opção? '))
+        if opcao == 1:
             print(f'A soma entre {x} e {y} é {x + y}')
-        elif opção == 2:
+        elif opcao == 2:
             print(f'O resultado de {x} x {y} é {x * y}')
-        elif opção == 3:
+        elif opcao == 3:
             print(f'Entre {x} e {y} o maior valor é {max([x, y])}')
-        elif opção == 4:
+        elif opcao == 4:
             print('Informe os números novamente:')
-            x, y = novos_números()
-        elif opção == 5:
+            x, y = novos_numeros()
+        elif opcao == 5:
             print('Finalizando...')
             sleep(2)
             break
@@ -30,7 +31,7 @@ def main():
     print('Fim do programa! Volte sempre!')
 
 
-def novos_números():
+def novos_numeros():
     '''Retorna dois novos números que o usuário digitar.'''
     x = int(input('Primeiro valor: '))
     y = int(input('Segundo valor: '))
@@ -38,4 +39,5 @@ def novos_números():
 
 
 # -----------------------------------------
-main()
+if __name__ == '__main__':
+    main()

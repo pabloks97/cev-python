@@ -1,7 +1,8 @@
 # Exercício 068 - Jogo do Par ou Ímpar
 
 from random import randint
-from utils import escreve, é_par
+from utils import escreve, par
+
 
 def main():
     escreve('VAMOS JOGAR PAR OU ÍMPAR')
@@ -10,14 +11,14 @@ def main():
 
 def novo_jogo():
     '''Inicia um novo jogo.'''
-    opção = pega_opção()
+    opcao = pega_opcao()
     jogador = pega_valor_jogador()
     computador = pega_valor_computador()
 
     resultado = calcula_resultado(jogador, computador)
     print(f'Você jogou {jogador} e o computador {computador}. ', end='')
     print(f'Total de {jogador + computador} DEU {resultado}!')
-    exibe_vencedor(opção, resultado[0].replace('Í', 'I'))
+    exibe_vencedor(opcao, resultado[0].replace('Í', 'I'))
 
 
 def pega_valor_jogador():
@@ -30,7 +31,7 @@ def pega_valor_computador():
     return randint(1, 10)
 
 
-def pega_opção():
+def pega_opcao():
     '''Retorna a opção "P" ou "I" que o jogador digitar.'''
     return input('Par ou Ímpar? [P/I] ').upper()
 
@@ -38,12 +39,12 @@ def pega_opção():
 def calcula_resultado(jogador, computador):
     '''Retorna "PAR" ou "ÍMPAR" de acordo com o resultado do jogo.'''
     total = jogador + computador
-    return 'PAR' if é_par(total) else 'ÍMPAR'
+    return 'PAR' if par(total) else 'ÍMPAR'
 
 
-def exibe_vencedor(opção, resultado):
+def exibe_vencedor(opcao, resultado):
     '''Diz se o jogador venceu ou perdeu o jogo.'''
-    if opção == resultado:
+    if opcao == resultado:
         print('Você VENCEU!')
         print('Vamos jogar novamente...')
         novo_jogo()
@@ -52,4 +53,5 @@ def exibe_vencedor(opção, resultado):
 
 
 # ------------------------------------
-main()
+if __name__ == '__main__':
+    main()

@@ -3,6 +3,7 @@
 from random import randint
 from time import sleep
 
+
 def main():
     itens = ['Pedra', 'Papel', 'Tesoura']
 
@@ -45,4 +46,5 @@ def calcula_vencedor(jogadas):
 
 
 # -------------------------------------------
-main()
+if __name__ == '__main__':
+    main()

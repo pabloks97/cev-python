@@ -1,21 +1,22 @@
 # Python 041 - Classificando Atletas
 
 from datetime import datetime
+
 ano_atual = datetime.now().year
 
 nascimento = int(input('Ano de Nascimento: '))
 idade = ano_atual - nascimento
 
 if idade <= 9:
-    classificação = 'MIRIM'
+    classificacao = 'MIRIM'
 elif idade <= 14:
-    classificação = 'INFANTIL'
+    classificacao = 'INFANTIL'
 elif idade <= 19:
-    classificação = 'JUNIOR'
+    classificacao = 'JUNIOR'
 elif idade <= 25:
-    classificação = 'SÊNIOR'
+    classificacao = 'SÊNIOR'
 else:
-    classificação = 'MASTER'
+    classificacao = 'MASTER'
 
 print(f'O atleta tem {idade} anos.')
-print(f'Classificação: {classificação}')
+print(f'Classificação: {classificacao}')

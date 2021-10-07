@@ -2,29 +2,32 @@
 
 from utils import escreve
 
+
 def main():
     escreve('BANCO CEV', '=')
     valor = int(input('Que valor você quer sacar? R$'))
 
-    cédulas = [100, 50, 20, 10, 5, 2, 1]
-    for cédula in cédulas:
-        total = calcula_total(valor, cédula)
-        valor = calcula_resto(valor, cédula)
+    cedulas = [100, 50, 20, 10, 5, 2, 1]
+    for cedula in cedulas:
+        total = calcula_total(valor, cedula)
+        valor = calcula_resto(valor, cedula)
         if total != 0:
-            print(f'Total de {total} cédula(s) de R${cédula}')
+            print(f'Total de {total} cédula(s) de R${cedula}')
 
     print(40 * '=')
     print('Volte sempre ao BANCO CEV! Tenha um bom dia!')
 
 
-def calcula_total(valor, cédula):
+def calcula_total(valor, cedula):
     '''Retorna a quantidade de cédulas para pagar um valor.'''
-    return valor // cédula
+    return valor // cedula
 
-def calcula_resto(valor, cédula):
+
+def calcula_resto(valor, cedula):
     '''Retorna o resto a ser pago.'''
-    return valor % cédula
+    return valor % cedula
 
 
 # ---------------------------------------------
-main()
+if __name__ == '__main__':
+    main()
