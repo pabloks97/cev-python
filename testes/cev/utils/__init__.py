@@ -1,6 +1,7 @@
-# Funções auxiliares
+# Módulo com funções auxiliares
 
 from datetime import datetime
+
 
 def quadrado(x):
     '''Retorna o quadrado de x.'''
@@ -12,7 +13,7 @@ def soma_quadrados(x, y):
     return quadrado(x) + quadrado(y)
 
 
-def média(valores):
+def media(valores):
     '''Retorna a média de uma lista de valores.'''
     return sum(valores) / len(valores)
 
@@ -22,14 +23,14 @@ def porcento(x, valor):
     return x / 100 * valor
 
 
-def desconto(x, preço):
+def desconto(x, preco):
     '''Retorna o preço com x porcento de desconto.'''
-    return preço - porcento(x, preço)
+    return preco - porcento(x, preco)
 
 
-def juros(x, preço):
+def juros(x, preco):
     '''Retorna o preço com x porcento de juros.'''
-    return preço + porcento(x, preço)
+    return preco + porcento(x, preco)
 
 
 def calcula_idade(nascimento, ano_atual=datetime.now().year):
@@ -50,73 +51,59 @@ def fatorial(n, contador=1, produto=1):
         return fatorial(n, contador + 1, contador * produto)
 
 
-def é_par(número):
+def par(x):
     '''Retorna True se o número for par.'''
-    return número % 2 == 0
+    return x % 2 == 0
 
 
-def é_primo(número):
+def primo(x):
     '''Retorna True se o número for primo.'''
-    return len(divisores(número)) == 2
+    return len(divisores(x)) == 2
 
 
-def é_bissexto(ano):
+def bissexto(ano):
     '''Retorna True se o ano for bissexto.'''
     return ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0
 
 
-def é_triângulo(a, b, c):
+def triangulo(a, b, c):
     '''Retorna True caso os segmentos formem um triângulo.'''
     return a < (b + c) and a > abs(b - c)
 
 
-def é_equilátero(a, b, c):
+def equilatero(a, b, c):
     '''Retorna True se o triângulo for equilátero.'''
     return a == b == c
 
 
-def é_isósceles(a, b, c):
+def isosceles(a, b, c):
     '''Retorna True se o triângulo for isósceles.'''
     return a == b or b == c or a == c
 
 
-def posição(item, lista):
+def posicao(item, lista):
     '''Retorna a posição do item na lista.'''
     return lista.index(item) + 1 if item in lista else -1
 
 
-def divisores(número):
+def divisores(x):
     '''Retorna uma lista com os divisores de um número.'''
-    return [i for i in range(1, número + 1) if número % i == 0]
+    return [i for i in range(1, x + 1) if x % i == 0]
 
 
-def escreve(texto, estilo='~', preenchimento=4):
-    '''Escreve o texto no formato de um cabeçalho.'''
-    tamanho = len(texto) + preenchimento
-    print(tamanho * estilo)
-    print(f'{texto:^{tamanho}}')
-    print(tamanho * estilo)
-
-
-def exibe_menu(opções):
-    '''Exibe um menu de opções.'''
-    for i in range(len(opções)):
-        print(f'[ {i + 1} ] {opções[i]}')
-
-
-def exibe_pa(termo, razão, n):
+def exibe_pa(termo, razao, n):
     '''Exibe n termos de uma progressão aritmética.'''
     for i in range(n):
         print(f'{termo} → ', end='')
-        termo += razão
+        termo += razao
 
 
 def tabuada(x, n=10):
     '''Exibe a tabuada de x.'''
     produtos = gera_produtos(x, n)
-    espaços = len(str(n))
+    espacos = len(str(n))
     for i in range(len(produtos)):
-        print(f'{x} x {str(i + 1).ljust(espaços)} = {produtos[i]}')
+        print(f'{x} x {str(i + 1).ljust(espacos)} = {produtos[i]}')
 
 
 def gera_produtos(x, n):
