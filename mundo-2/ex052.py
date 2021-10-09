@@ -1,6 +1,6 @@
 # Exercício 052 - Números Primos
 
-from utils import divisores, primo
+from cev.utils import divisores, primo
 
 x = int(input('Digite um número: '))
 

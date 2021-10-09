@@ -1,6 +1,6 @@
 # Exercício 060 - Cálculo do Fatorial
 
-from utils import fatorial
+from cev.utils import fatorial
 
 x = int(input('Digite um número para calcular seu Fatorial: '))
 

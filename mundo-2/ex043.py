@@ -1,6 +1,6 @@
 # Exercício 043 - Índice de Massa Corporal
 
-from utils import imc
+from cev.utils import imc
 
 peso = float(input('Qual é seu peso? (Kg) '))
 altura = float(input('Qual é sua altura? (m) '))

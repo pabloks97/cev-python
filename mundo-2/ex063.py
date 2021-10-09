@@ -1,8 +1,8 @@
 # Exercício 063 - Sequência de Fibonacci v1.0
 
-from utils import escreve
+from cev.menu import cabecalho
 
-escreve('Sequência de Fibonacci', '-')
+cabecalho('Sequência de Fibonacci', '-')
 
 termos = int(input('Quantos termos você quer mostrar? '))
 termo1 = 0

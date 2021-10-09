@@ -1,6 +1,6 @@
 # Exercício 062 - Super Progressão Aritmética v3.0
 
-from utils import exibe_pa
+from cev.utils import exibe_pa
 
 termo_inicial = int(input('Primeiro termo: '))
 razao = int(input('Razão da PA: '))

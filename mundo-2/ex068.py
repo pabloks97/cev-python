@@ -1,11 +1,12 @@
 # Exercício 068 - Jogo do Par ou Ímpar
 
 from random import randint
-from utils import escreve, par
+from cev.menu import cabecalho
+from cev.utils import par
 
 
 def main():
-    escreve('VAMOS JOGAR PAR OU ÍMPAR')
+    cabecalho('VAMOS JOGAR PAR OU ÍMPAR')
     novo_jogo()
 
 

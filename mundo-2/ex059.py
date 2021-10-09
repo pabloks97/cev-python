@@ -1,7 +1,7 @@
 # Exercício 059 - Criando um Menu de Opções
 
 from time import sleep
-from utils import exibe_menu
+from cev.menu import exibe_opcoes
 
 
 def main():
@@ -9,7 +9,7 @@ def main():
 
     x, y = novos_numeros()
     while True:
-        exibe_menu(OPCOES)
+        exibe_opcoes(OPCOES)
         opcao = int(input('>>>>> Qual é a sua opção? '))
         if opcao == 1:
             print(f'A soma entre {x} e {y} é {x + y}')

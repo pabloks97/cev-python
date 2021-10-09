@@ -1,6 +1,6 @@
 # Exercício 050 - Soma dos Pares
 
-from utils import par
+from cev.utils import par
 
 soma = pares = 0
 for i in range(1, 7):

@@ -1,6 +1,6 @@
 # Exercício 040 - Aquele Clássico da Média
 
-from utils import media
+from cev.utils import media
 
 notas = []
 notas.append(float(input('Primeira nota: ')))

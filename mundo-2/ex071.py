@@ -1,10 +1,10 @@
 # Exercício 071 - Simulador de Caixa Eletrônico
 
-from utils import escreve
+from cev.menu import cabecalho
 
 
 def main():
-    escreve('BANCO CEV', '=')
+    cabecalho('BANCO CEV', '=')
     valor = int(input('Que valor você quer sacar? R$'))
 
     cedulas = [100, 50, 20, 10, 5, 2, 1]

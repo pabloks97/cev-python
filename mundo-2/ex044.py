@@ -1,6 +1,7 @@
 # Exercício 044 - Gerenciador de Pagamentos
 
-from utils import exibe_menu, desconto, juros
+from cev.menu import exibe_opcoes
+from cev.utils import desconto, juros
 
 OPCOES = [
     'à vista dinheiro/cheque', 'à vista cartão', '2x no cartão',
@@ -10,7 +11,7 @@ OPCOES = [
 preco = float(input('Preço das compras: R$'))
 
 print('FORMAS DE PAGAMENTO')
-exibe_menu(OPCOES)
+exibe_opcoes(OPCOES)
 opcao = int(input('Qual é a opção? '))
 
 if opcao == 1:

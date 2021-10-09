@@ -1,10 +1,10 @@
 # Exercício 069 - Análise de Dados do Grupo
 
-from utils import escreve
+from cev.menu import cabecalho
 
 
 def main():
-    escreve('CADASTRE UMA PESSOA', '-')
+    cabecalho('CADASTRE UMA PESSOA', '-')
     idades, sexos = cadastra_pessoa()
     while continua():
         idades, sexos = cadastra_pessoa(idades, sexos)

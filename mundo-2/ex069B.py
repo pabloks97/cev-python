@@ -1,11 +1,11 @@
 # Exercício 069 - Análise de Dados do Grupo
 
-from utils import escreve
+from cev.menu import cabecalho
 
 maiores = homens = mulheres_menores = 0
 
 while True:
-    escreve('CADASTRE UMA PESSOA', '-')
+    cabecalho('CADASTRE UMA PESSOA', '-')
 
     idade = int(input('Idade: '))
     sexo = input('Sexo: [M/F] ')
@@ -19,7 +19,7 @@ while True:
 
     print(28 * '-')
     if input('Quer continuar? [S/N] ') not in 'sS':
-        print(28 * '-')	
+        print(28 * '-')
         break
 
 print(f'Total de pessoas com mais de 18 anos: {maiores}')

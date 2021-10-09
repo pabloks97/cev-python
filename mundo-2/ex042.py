@@ -1,6 +1,6 @@
 # Exercício 042 - Analisando Triângulos v2.0
 
-from utils import triangulo, equilatero, isosceles
+from cev.utils import triangulo, equilatero, isosceles
 
 a = int(input('Primeiro segmento: '))
 b = int(input('Segundo segmento: '))
