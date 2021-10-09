@@ -1,7 +1,7 @@
 # Exercício 032 - Ano Bissexto
 
 from datetime import datetime
-from utils import bissexto
+from cev.utils import bissexto
 
 ano = int(input('Que ano quer analisar? Coloque 0 para analisar o ano atual: '))
 

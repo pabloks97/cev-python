@@ -1,4 +1,4 @@
-# Funções auxiliares
+# Módulo com funções auxiliares
 
 from datetime import datetime
 
@@ -89,20 +89,6 @@ def posicao(item, lista):
 def divisores(x):
     '''Retorna uma lista com os divisores de um número.'''
     return [i for i in range(1, x + 1) if x % i == 0]
-
-
-def escreve(texto, estilo='~', preenchimento=4):
-    '''Escreve o texto no formato de um cabeçalho.'''
-    tamanho = len(texto) + preenchimento
-    print(tamanho * estilo)
-    print(f'{texto:^{tamanho}}')
-    print(tamanho * estilo)
-
-
-def exibe_menu(opcoes):
-    '''Exibe um menu de opções.'''
-    for i in range(len(opcoes)):
-        print(f'[ {i + 1} ] {opcoes[i]}')
 
 
 def exibe_pa(termo, razao, n):

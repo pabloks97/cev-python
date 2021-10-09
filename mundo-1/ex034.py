@@ -1,6 +1,6 @@
 # Exercício 034 - Aumentos Múltiplos
 
-from utils import porcento
+from cev.utils import porcento
 
 salario = float(input('Qual é o salário do funcionário? R$'))
 
