@@ -1,6 +1,6 @@
 # Módulo moeda do pacote cev
 
-from utils import cabecalho
+from cev.menu import cabecalho
 
 
 def dobro(x):

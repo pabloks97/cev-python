@@ -1,7 +1,8 @@
 # Exercício 101 - Funções para Votação
 
 from datetime import datetime
-from utils import calcula_idade
+from cev.utils import calcula_idade
+
 
 def main():
     nascimento = int(input('Em que ano você nasceu? '))
@@ -21,4 +22,5 @@ def voto(nascimento):
 
 
 # ------------------------------------
-main()
+if __name__ == '__main__':
+    main()

@@ -1,6 +1,6 @@
 # Exercício 094 - Unindo Dicionários e Listas
 
-from utils import média
+from cev.utils import media
 
 pessoas = []
 while True:
@@ -23,7 +23,7 @@ print(f'A) Ao todo temos {len(pessoas)} pessoas cadastradas.')
 idades = []
 for p in pessoas:
     idades.append(p['idade'])
-print(f'B) A média de idade é de {média(idades):.2f} anos.')
+print(f'B) A média de idade é de {media(idades):.2f} anos.')
 
 mulheres = []
 for p in pessoas:
@@ -33,7 +33,7 @@ print(f'C) As mulheres cadastradas foram {mulheres}')
 
 print(f'D) Lista das pessoas que estão acima da média:')
 for p in pessoas:
-    if p['idade'] > média(idades):
+    if p['idade'] > media(idades):
         print(f'\tnome = {p["nome"]}; ', end='')
         print(f'sexo = {p["sexo"].upper()}; ', end='')
         print(f'idade = {p["idade"]};')

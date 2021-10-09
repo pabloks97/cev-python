@@ -1,12 +1,13 @@
 # Exercício 104 - Validando Entrada de Dados em Python
 
+
 def main():
-    x = lê_int('Digite um número: ',
+    x = le_int('Digite um número: ',
                '\033[0;31mERRO! Digite um número inteiro válido: \033[m')
     print(f'Você acabou de digitar o número {x}')
 
 
-def lê_int(prompt='', erro=''):
+def le_int(prompt='', erro=''):
     '''Lê um número inteiro do usúario.'''
     while True:
         x = input(prompt)
@@ -16,4 +17,5 @@ def lê_int(prompt='', erro=''):
 
 
 # ----------------------------------------------------
-main()
+if __name__ == '__main__':
+    main()

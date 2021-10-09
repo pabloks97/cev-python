@@ -1,11 +1,11 @@
 # Exercício 083 - Validando Expressões Matemáticas
 
-expressão = input('Digite a expressão: ')
+expressao = input('Digite a expressão: ')
 
-válida = expressão.count('(') - expressão.count(')') == 0
+valida = expressao.count('(') - expressao.count(')') == 0
 
-for i, c in enumerate(expressão):
-    if c == ')' and expressão[:i].count('(') - expressão[:i].count(')') == 0:
-        válida = False
+for i, c in enumerate(expressao):
+    if c == ')' and expressao[:i].count('(') - expressao[:i].count(')') == 0:
+        valida = False
 
-print(f'Sua expressão está {"válida" if válida else "errada"}!')
+print(f'Sua expressão está {"válida" if valida else "errada"}!')

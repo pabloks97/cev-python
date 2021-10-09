@@ -1,7 +1,8 @@
 # Exercício 092 - Cadastro de Trabalhador em Python
 
-from utils import calcula_idade
+from cev.utils import calcula_idade
 from datetime import datetime
+
 ano_atual = datetime.now().year
 
 dicio = {}

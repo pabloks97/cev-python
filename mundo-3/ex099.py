@@ -1,5 +1,6 @@
 # Exercício 099 - Função que Descobre o Maior
 
+
 def main():
     maior(2, 9, 4, 5, 7, 1)
     maior(4, 7, 0)
@@ -18,4 +19,5 @@ def maior(*n):
 
 
 # -------------------------------------------
-main()
+if __name__ == '__main__':
+    main()

@@ -1,7 +1,8 @@
 # Exercício 098 - Função de Contador
 
 from time import sleep
-from utils import escreve
+from cev.menu import cabecalho
+
 
 def main():
     contador(1, 10, 1)
@@ -9,25 +10,26 @@ def main():
 
     print(18 * '-=')
     print('Agora é a sua vez de personalizar a contagem!')
-    início = int(input('Início: '))
+    inicio = int(input('Início: '))
     fim = int(input('Fim: '))
     passo = abs(int(input('Passo: ')))
-    contador(início, fim, passo) if passo != 0 else contador(início, fim)
+    contador(inicio, fim, passo) if passo != 0 else contador(inicio, fim)
 
 
-def contador(início, fim, passo=1):
-    escreve(f'Contagem de {início} até {fim} de {passo} em {passo}', '-')
+def contador(inicio, fim, passo=1):
+    cabecalho(f'Contagem de {inicio} até {fim} de {passo} em {passo}', '-')
     sleep(2.5)
-    if início > fim:
+    if inicio > fim:
         fim -= 1
         passo = -passo
     else:
         fim += 1
-    for i in range(início, fim, passo):
+    for i in range(inicio, fim, passo):
         print(f'{i} ', end='', flush=True)
         sleep(0.5)
     print('FIM!')
 
 
 # ----------------------------------
-main()
+if __name__ == '__main__':
+    main()

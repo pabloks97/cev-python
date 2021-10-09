@@ -1,6 +1,6 @@
 # Exercício 082 - Dividindo Valores em Várias Listas
 
-from utils import é_par
+from cev.utils import par
 
 valores = []
 while True:
@@ -8,5 +8,5 @@ while True:
     if input('Quer continuar? [S/N] ') not in 'sS': break
 
 print(f'A lista completa é {valores}')
-print(f'A lista de pares é {[v for v in valores if é_par(v)]}')
-print(f'A lista de ímpares é {[v for v in valores if not é_par(v)]}')
+print(f'A lista de pares é {[v for v in valores if par(v)]}')
+print(f'A lista de ímpares é {[v for v in valores if not par(v)]}')

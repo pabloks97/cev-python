@@ -1,6 +1,4 @@
-# Módulo arquivo do pacote cev
-
-from cev.menu import cabecalho
+# Módulo de arquivo do pacote cev
 
 
 def arquivo_existe(nome_arquivo):

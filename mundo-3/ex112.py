@@ -2,5 +2,5 @@
 
 from cev import dado, moeda
 
-preço = dado.lê_dinheiro('Digite o preço: R$')
-moeda.resumo(preço, 35, 22)
+preco = dado.le_dinheiro('Digite o preço: R$')
+moeda.resumo(preco, 35, 22)

@@ -2,5 +2,5 @@
 
 from cev import moeda
 
-preço = float(input('Digite seu preço: R$'))
-moeda.resumo(preço, 10, 5)
+preco = float(input('Digite seu preço: R$'))
+moeda.resumo(preco, 10, 5)

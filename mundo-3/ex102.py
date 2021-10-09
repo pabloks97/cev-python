@@ -1,5 +1,6 @@
 # Exercício 102 - Função para Fatorial
 
+
 def main():
     fatorial(5, True)
 
@@ -13,9 +14,10 @@ def fatorial(x, mostra=False):
 
     f = 1
     for i in range(x, 0, -1): f *= i
-    if mostra: mostra_fatorial()        
+    if mostra: mostra_fatorial()
     return f
 
 
 # ------------------------------------
-main()
+if __name__ == '__main__':
+    main()
